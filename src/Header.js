@@ -3,13 +3,12 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
-import Alert from 'react-bootstrap/Alert'
-
+import './Header.css';
 function Header() {
   return (
     <Container>
-      <Row className="Header-banner">
-        <Col>1 of 2</Col>
+      <Row >
+        <Col className="Header-banner" >1 of 2</Col>
         <Col>2 of 2</Col>
       </Row>
       <Row>
