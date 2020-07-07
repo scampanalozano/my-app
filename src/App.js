@@ -7,6 +7,8 @@ function App() {
   return (
     <div>
      <Header/>
+     {/* <Contenido/>
+     <Footer/> */}
     </div>
   );
 }
