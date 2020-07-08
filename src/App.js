@@ -1,15 +1,23 @@
 import React from 'react';
 import logo from './logo.svg';
+import Container from 'react-bootstrap/Container'
 import './App.css';
 import Header from './Header';
+import Contenido from './Contenido' ;
+import Footer from './Footer';
+import {
+  BrowserRouter as Router,
+} from "react-router-dom";
 
 function App() {
   return (
-    <div>
+    <Container fluid>
+    <Router>
      <Header/>
-     {/* <Contenido/>
-     <Footer/> */}
-    </div>
+     <Contenido/>
+     </Router>
+     <Footer/>
+   </Container>
   );
 }
 
