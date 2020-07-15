@@ -1,8 +1,16 @@
-.Header-banner{
-    background: rgb(172, 114, 104);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(22,66,66,0.9262079831932774) 35%, rgba(0,212,255,0.9290091036414566) 100%);
 
+
+.Header-banner{
+    background: rgb(209, 139, 127);
+   
 }
 .Header-nombre{
     background: rgb(111, 107, 186);
 }
+
+.titulo{
+    
+    font-family: 'Sacramento', cursive;
+    font-size: xx-large
+}
+
