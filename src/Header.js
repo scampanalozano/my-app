@@ -5,13 +5,20 @@ import Col from 'react-bootstrap/Col'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import './Header.css';
+import logo from './logo.PNG'
+import Image from 'react-bootstrap/Image'
+
 
 const Header = () =>   {
   return (
     <Row>
       <Col>
         <Row>
-          <Col className="titulo">Funny Moms</Col>
+          <Col>
+          <Image className="logo"
+          src={logo}
+          fluid
+        /></Col>
         </Row>
         <Row>
           <Col>
@@ -38,7 +45,10 @@ const navigationBar = () => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+      
   );
 }
+
+
 
 export default Header;// para que este disponible para otros archivos 

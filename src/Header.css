@@ -1,16 +1,22 @@
 
 
 .Header-banner{
-    background: rgb(209, 139, 127);
+    background: rgb(56, 185, 194);
    
 }
-.Header-nombre{
-    background: rgb(111, 107, 186);
+
+.mr-auto{
+
+    font-family: 'Kalam', cursive;
+    
 }
 
-.titulo{
+.logo{
     
-    font-family: 'Sacramento', cursive;
-    font-size: xx-large
+   
+    width: 240px; height: 150px;
+    display:block;
+    margin:auto;
+
 }
 
