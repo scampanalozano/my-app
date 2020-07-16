@@ -2,36 +2,35 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import prueba from './prueba.jpg';
 import Image from 'react-bootstrap/Image'
+import imagen1 from './imagen1.jpg';
+import imagen2 from './imagen2.jpg';
+import imagen3 from './imagen3.jpg';
+import './Home.css'
 const Home = () => {
   return (
     <Carousel>
       <Carousel.Item>
-        <Image
-          src="./holder.js"
+        <Image className="imagen1"
+          src={imagen1}
           fluid
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <Image
-          className="d-block w-100"
-          src="C:\Users\Dell\OneDrive\Imágenes\mono.png"
-          alt="Second slide"
+        <Image className="imagen2"
+          src={imagen2}
+          fluid
         />
         <Carousel.Caption>
-          <h3>Second slide label</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <Image
-          className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
-          alt="Third slide"
+        <Image className="imagen3"
+          src={imagen3}
+          fluid
         />
         <Carousel.Caption>
-          <h3>Third slide label</h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
