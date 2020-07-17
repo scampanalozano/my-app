@@ -2,7 +2,7 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Lunchs from './Lunchs'
-import Actividades from './Actividades';
+import Actividades from './actividades/Actividades';
 import Home from './Home';
 
 import {
