@@ -33,7 +33,6 @@ const Header = () =>   {
 
 const navigationBar = () => {
   return (
-    
       <Navbar expand="sm" variant="dark" className="Header-banner">
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

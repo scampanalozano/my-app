@@ -68,7 +68,7 @@ const Actividades = () => {
                 </Row>
 
                 <Row>
-                <Button variant="info" className="boton">Info</Button>{' '}
+                <Button variant="info" className="boton">Generar</Button>{' '}
                 </Row>
                 <Row>
                     <Col>Nombre de la actividad</Col>
