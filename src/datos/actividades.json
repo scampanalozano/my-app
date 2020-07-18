@@ -1,0 +1,18 @@
+{
+    "activades":[
+    {
+        "nombre":"Ciencia Loca",
+        "descripcion": "actividades de ciencia para niños",
+        "links":["http://oyasdl", "http://"],
+        "complejidad": "alta",
+        "duracion": "40",
+        "edad":[6,7]
+    },
+    {
+        "nombre":"pintura de animales",
+        "descripcion": "actividades de ciencia para niños",
+        "complejidad": "alta",
+        "duracion": "10"
+    }
+    ]
+}
