@@ -1,0 +1,22 @@
+.vision{
+
+    display: table;
+    height: 200px;
+    width: 400px;
+    margin: 2rem auto;
+    text-align: center;
+    font-family: 'Neucha', cursive;
+    
+    
+}
+
+.vision p {
+
+display: table-cell;
+    margin: 0 ;
+    padding: 0 1rem;
+    vertical-align: middle;
+
+
+
+}
