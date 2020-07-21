@@ -41,7 +41,7 @@ const navigationBar = () => {
           <Nav.Link href="#"><Link to="/">Inicio</Link></Nav.Link>
           <Nav.Link href="#"><Link to="/QuienesSomos">¿Quienes Somos?</Link></Nav.Link>
           <Nav.Link href="#"><Link to="/actividades">Actividades</Link></Nav.Link>
-          <Nav.Link href="#"><Link to="/lunchs">Actividades</Link></Nav.Link>
+          <Nav.Link href="#"><Link to="/lunchs">Lunchs</Link></Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
