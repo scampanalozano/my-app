@@ -18,12 +18,8 @@ const Contenido = () => {
         <Row>
             <Col>
                 <Switch>
-                    <Route path="/home">
-                        <Home />
-                    </Route>
-                    <Route path="/QuienesSomos">
-                        <QuienesSomos/>
-                    </Route>
+                    <Route exact path="/" component={ Home } />
+                    <Route exact path="/QuienesSomos" component= { QuienesSomos }/>
                     <Route path="/lunchs">
                         <Lunchs />
                     </Route>
