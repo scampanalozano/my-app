@@ -1,7 +1,8 @@
 //ideal es que esto invoque a un servicio web
-export const generarActividades = (fechaDeNacimiento, tiempo) =>{
+import actividades from "../datos/actividades"
+export const generarActividadesPorFechaYPorTiempo = (fechaDeNacimiento, tiempo) =>{
     ////
-
+    console.log("------------------->");
     //validacion//
     //fecha que no sea en el futuro
     //fecha no sea menor a la fecha de hoy -12
@@ -10,13 +11,7 @@ export const generarActividades = (fechaDeNacimiento, tiempo) =>{
 
     //leer un json 
     //retornar la lista completa
-
-    return {
-        nombre:"Ciencia Loca",
-        descripcion: "actividades de ciencia para niños",
-        links:["http://oyasdl", "http://"],
-        complejidad: "alta",
-        duracion: "40",
-        edad:[6,7]
-    }
+//conectarse al servicio web
+//retornar la lista del web service
+    return actividades.actividades
 };

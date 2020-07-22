@@ -8,13 +8,33 @@ import './Actividades.css'
 import oso from './oso.gif';
 import Image from 'react-bootstrap/Image'
 import Button from "react-bootstrap/Button"
-import {generarActividades} from "../controllers/actividadesController";
+import Table from "react-bootstrap/Table"
+import { generarActividadesPorFechaYPorTiempo } from "../controllers/actividadesController";
 
 //Hooks
 const Actividades = () => {
     const [fechaDeNacimiento, setFechaDeNacimiento] = useState(new Date())
     const [tiempo, setTiempo] = useState("15")
-    const [actividad, setActividad] = useState({});
+    const [actividades, setActividades] = useState(
+        <tr>
+            <td>No hay datos</td>
+        </tr>
+    );
+    //porque se daña , por qué es necesario hacer lo de aca arriba
+    //const [actividades, setActividades] = useState({});
+
+    const nombreDeLasCabeceras = ["Nombre", "Descripcion"]
+
+    //mapear el arreglo de cabeceras y voy a retornar un arreglo de table headers
+    //<th>texto de la cabecera</th>
+    //cabeceras = []
+    //for(let i = 0; i< cabeceras.length, i++){
+    // let item = cabeceras[i];
+    // let transformado  = <th>{item}</th>
+    //cabeceras.push(transformado)
+    //}
+
+    const cabeceras = nombreDeLasCabeceras.map(item => <th>{item}</th>)
 
     // this.state = {
     //     fechaDeNacimiento:"",
@@ -26,15 +46,26 @@ const Actividades = () => {
     //useEffect
 
     const generarActividad = (e) => {
-        //para que capturamos la fecha y el tiempo
-        console.log(`------->${fechaDeNacimiento}`);
-        console.log(tiempo);
+
         // funcion que va a a consultar las actividades de acuerdo al tiempo
-        const actividad = generarActividades(fechaDeNacimiento, tiempo)
-        setActividad(actividad);
+        const actividades = generarActividadesPorFechaYPorTiempo(fechaDeNacimiento, tiempo)
+        //map actividades en table row
+        //<tr>
+        //   <td>nombre</td>
+        //   <td>descripcion</td>
+        // </tr>
+
+        const tablaActividades = actividades.map(actividad =>
+            (<tr>
+                <td>{actividad.nombre}</td>
+                <td>{actividad.descripcion}</td>
+            </tr>)
+        );
+
+        setActividades(tablaActividades);
     };
 
-    const onTiempoSelect = (event) =>{
+    const onTiempoSelect = (event) => {
         setTiempo(event.target.value);
     };
 
@@ -53,7 +84,7 @@ const Actividades = () => {
                                 </Col>
                                 <Col lg="4" md="4">
                                     <DatePicker selected={fechaDeNacimiento}
-                                        onChange = {setFechaDeNacimiento}
+                                        onChange={setFechaDeNacimiento}
                                     />
                                 </Col>
                                 <Col lg="2" md="2" className='tiempo'>
@@ -85,21 +116,21 @@ const Actividades = () => {
                             fluid
                         /></Col>
                 </Row>
-
                 <Row>
                     <Button variant="info" className="boton" onClick={generarActividad}>Generar</Button>{' '}
                 </Row>
+                <Row><Col></Col></Row>
                 <Row>
-                    <Col>Nombre de la actividad</Col>
-                    <Col>{actividad.nombre}</Col>
-                </Row>
-                <Row>
-                    <Col>Descripcion:</Col>
-                    <Col>{actividad.descripcion}</Col>
-                </Row>
-                <Row>
-                    <Col>Links:</Col>
-                    <Col>{actividad.links}</Col>
+                    <Table striped bordered hover>
+                        <thead>
+                            <tr>
+                                {cabeceras}
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {actividades}
+                        </tbody>
+                    </Table>
                 </Row>
             </Col>
         </Row>
