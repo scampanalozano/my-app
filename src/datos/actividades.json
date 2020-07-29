@@ -1,18 +1,37 @@
 {
     "actividades":[
     {
-        "nombre":"Ciencia Loca",
-        "descripcion": "actividades de ciencia para niños",
-        "links":["http://oyasdl", "http://"],
-        "complejidad": "alta",
-        "duracion": "40",
-        "edad":[6,7]
+        "nombre":"Pintemos y cantemos",
+        "descripcion": "Vamos a pintar los animales y cantar",
+        "links":["https://i.ibb.co/tKkVNV8/animales.jpg",   "Cancion: https://www.youtube.com/watch?v=HRs7Dfxl2-c"],
+        "complejidad": "baja",
+        "tiempo": 15,
+        "edad":[3,4]
     },
     {
-        "nombre":"pintura de animales",
-        "descripcion": "actividades de ciencia para niños",
-        "complejidad": "alta",
-        "duracion": "10"
+        "nombre":"Plastilina",
+        "descripcion": "Hagamos pastilina casera facilmente",
+        "links":["https://www.youtube.com/watch?v=HRs7Dfxl2-c"],
+        "complejidad": "media",
+        "tiempo": 30,
+        "edad":[9,10]
+    },
+    {
+        "nombre":"Dibujemos",
+        "descripcion": "Hagamos pastilina casera facilmente",
+        "links":["https://www.youtube.com/watch?v=HRs7Dfxl2-c"],
+        "complejidad": "media",
+        "tiempo": 30,
+        "edad":[3,4]
+    },
+    {
+        "nombre":"colores",
+        "descripcion": "Hagamos pastilina casera facilmente",
+        "links":["https://www.youtube.com/watch?v=HRs7Dfxl2-c"],
+        "complejidad": "media",
+        "tiempo": 15,
+        "edad":[3,4]
     }
+    
     ]
 }

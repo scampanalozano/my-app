@@ -9,8 +9,7 @@ import logo from './logo.PNG'
 import Image from 'react-bootstrap/Image'
 import { Link } from "react-router-dom";
 
-
-const Header = () => {
+const Header = () => { //functional componenet
   return (
     <Row>
       <Col>
@@ -31,7 +30,7 @@ const Header = () => {
     </Row>
   );
 }
- //TODO: verificar estilos y verificar mayusculas y minisculas en las rutas
+//TODO: verificar estilos y verificar mayusculas y minisculas en las rutas
 const navigationBar = () => {
   return (
     <Navbar expand="sm" variant="dark" className="Header-banner">

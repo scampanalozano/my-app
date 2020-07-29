@@ -8,74 +8,39 @@ import './Actividades.css'
 import oso from './oso.gif';
 import Image from 'react-bootstrap/Image'
 import Button from "react-bootstrap/Button"
-import Table from "react-bootstrap/Table"
-import { generarActividadesPorFechaYPorTiempo } from "../controllers/actividadesController";
+import TablaDeActividades from './TablaDeActividades';
+import useActividades from './hooks/useActividades';
+import Alerta from '../Alerta'
 
 //Hooks
-const Actividades = () => {
+const Actividades = () => { //Function Component
     const [fechaDeNacimiento, setFechaDeNacimiento] = useState(new Date())
     const [tiempo, setTiempo] = useState("15")
-    const [actividades, setActividades] = useState(
-        <tr>
-            <td>No hay datos</td>
-        </tr>
-    );
-    //porque se daña , por qué es necesario hacer lo de aca arriba
-    //const [actividades, setActividades] = useState({});
 
-    const nombreDeLasCabeceras = ["Nombre", "Descripcion"]
+    const { actividades,
+            generarActividades,
+            isError,
+            mensajesDeError
+        } = useActividades({fechaDeNacimiento, tiempo});
 
-    //mapear el arreglo de cabeceras y voy a retornar un arreglo de table headers
-    //<th>texto de la cabecera</th>
-    //cabeceras = []
-    //for(let i = 0; i< cabeceras.length, i++){
-    // let item = cabeceras[i];
-    // let transformado  = <th>{item}</th>
-    //cabeceras.push(transformado)
-    //}
-
-    const cabeceras = nombreDeLasCabeceras.map(item => <th>{item}</th>)
-
-    // this.state = {
-    //     fechaDeNacimiento:"",
-    //     tiempo:0,
-    //     actividad : {}
-    // }
-
-    // this.state = setState({fechaDEnacimeinto: "21/01/1980"})
-    //useEffect
-
-    const generarActividad = (e) => {
-
-        // funcion que va a a consultar las actividades de acuerdo al tiempo
-        const actividades = generarActividadesPorFechaYPorTiempo(fechaDeNacimiento, tiempo)
-        //map actividades en table row
-        //<tr>
-        //   <td>nombre</td>
-        //   <td>descripcion</td>
-        // </tr>
-
-        const tablaActividades = actividades.map(actividad =>
-            (<tr>
-                <td>{actividad.nombre}</td>
-                <td>{actividad.descripcion}</td>
-            </tr>)
-        );
-
-        setActividades(tablaActividades);
-    };
 
     const onTiempoSelect = (event) => {
         setTiempo(event.target.value);
     };
-
+    //horas 
+    //minutos
+    // const opciones = [{ descripcion: "15 minutos", tiempoEfectivo: 1 / 15 }, { descripcion: "1 hora", tiemporEfectivo: 1 }]
     return (
         <Row>
             <Col>
+                <Row>
+                    <Col>
+                        <Alerta show = {isError} message={mensajesDeError} />
+                    </Col>
+                </Row>
                 <Form>
                     <Row> <Col className="titulo">Seleccione la fecha de nacimiento y el tiempo:</Col></Row>
                     <Row>
-
                         <Col lg="2" md="1" />
                         <Col lg="8" md="10" >
                             <Row>
@@ -93,16 +58,15 @@ const Actividades = () => {
                                 <Col lg="4" md="4">
                                     <Form.Group controlId="exampleForm.ControlSelect1">
                                         <Form.Control as="select" defaultValue={tiempo} onChange={onTiempoSelect}>
-                                            <option>Seleccionar</option>
-                                            <option>15 minutos</option>
-                                            <option>30 minutos</option>
-                                            <option>1 hora</option>
-                                            <option>2 horas</option>
-                                            <option>3 horas</option>
+                                            <option>Seleccionar tiempo en minutos</option>
+                                            <option>15</option>
+                                            <option>30</option>
+                                            <option>60</option>
+                                            <option>120</option>
+                                            <option>180</option>
                                         </Form.Control>
                                     </Form.Group>
                                 </Col>
-
                             </Row>
                         </Col>
                         <Col lg="2" md="1" />
@@ -117,20 +81,10 @@ const Actividades = () => {
                         /></Col>
                 </Row>
                 <Row>
-                    <Button variant="info" className="boton" onClick={generarActividad}>Generar</Button>{' '}
+                    <Button variant="info" className="boton" onClick={generarActividades}>Generar</Button>{' '}
                 </Row>
-                <Row><Col></Col></Row>
                 <Row>
-                    <Table striped bordered hover>
-                        <thead>
-                            <tr>
-                                {cabeceras}
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {actividades}
-                        </tbody>
-                    </Table>
+                    <TablaDeActividades actividades={actividades} />
                 </Row>
             </Col>
         </Row>
@@ -138,5 +92,4 @@ const Actividades = () => {
 
 
 }
-
 export default Actividades;

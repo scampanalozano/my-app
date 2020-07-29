@@ -9,23 +9,22 @@ import Image from "react-bootstrap/Image"
 import osolunch from './osolunch.gif';
 import Button from "react-bootstrap/Button"
 import "./Lunchs.css";
-
-
-
+import TablaDeLunchs from './TablaDeLunchs';
+import useLunchs from './useLunchs';
+import Alerta from './Alerta'
 
 
 
 const Lunchs = () => {
     const [fechaDeNacimiento, setFechaDeNacimiento] = useState(new Date())
-    const [lunch, setLunch] = useState({});
+
+    const { lunchs,
+        generarLunchs,
+        isError,
+        mensajesDeError
+    } = useLunchs({ fechaDeNacimiento });
 
 
-
-    const generarLunch = (e) => {
-        console.log(`${fechaDeNacimiento}`);
-        const lunch = generarLunch(fechaDeNacimiento)
-        setLunch(lunch);
-    };
 
 
 
@@ -33,6 +32,12 @@ const Lunchs = () => {
     return (
         <Row>
             <Col>
+                <Row>
+                    <Col>
+                        <Alerta show={isError} message={mensajesDeError} />
+                    </Col>
+
+                </Row>
                 <Form>
                     <Row><Col className="titulo">Seleccione la fecha de nacimiento</Col>
                     </Row>
@@ -67,12 +72,24 @@ const Lunchs = () => {
                 <Row>
 
                     <Col>
-                        <Button variant="info" className="boton" onClick={generarLunch}>Generar</Button>{' '}
+                        <Button variant="info" className="boton" onClick={generarLunchs}>Generar</Button>{' '}
+                    </Col>
+
+
+
+                </Row>
+                <Row>
+                    <Col>
+                        <Col>
+                            <TablaDeLunchs lunchs={lunchs} />
+                        </Col>
                     </Col>
                 </Row>
 
 
+
             </Col>
+            
 
 
 
