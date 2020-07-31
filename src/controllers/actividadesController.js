@@ -30,6 +30,36 @@ export const generarActividadesPorFechaYPorTiempo = (fechaDeNacimiento, tiempo) 
             return actividad.edad.includes(edad)
             && actividad.tiempo <= tiempo
         })
+    
+        let arrayShuffle = function(actividadesParalaEdad){
+        let newPos;
+        let temp;
+        for ( let i= actividadesParalaEdad.length-1; i>0; i--){
+        
+          newPos= Math.floor(Math.random()*(i+1))
+          temp =actividadesParalaEdad[newPos]
+          actividadesParalaEdad[newPos]=actividadesParalaEdad[i]
+          actividadesParalaEdad[i]=temp
+        
+          }
+          return actividadesParalaEdad
+
+        }
+        let newArray = arrayShuffle(actividadesParalaEdad)
+        console.log (newArray)
+
+       // let i= actividadesParalaEdad[i],j,temp
+        //while (--i > 0){
+          //  j= Math.floor(Math.random()*(i+1));
+            //temp = actividadesParalaEdad[j];
+            //actividadesParalaEdad[j]=actividadesParalaEdad[i];
+            //actividadesParalaEdad[i]=temp
+        //}
+
+        console.log(actividadesParalaEdad)
+
+
+
        
      
        

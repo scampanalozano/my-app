@@ -3,7 +3,8 @@
     {
         "nombre":"Pintemos y cantemos",
         "descripcion": "Vamos a pintar los animales y cantar",
-        "links":["https://i.ibb.co/tKkVNV8/animales.jpg",   "Cancion: https://www.youtube.com/watch?v=HRs7Dfxl2-c"],
+        "links":["https://i.ibb.co/tKkVNV8/animales.jpg"],   
+        "cancion":["https://www.youtube.com/watch?v=HRs7Dfxl2-c"],
         "complejidad": "baja",
         "tiempo": 15,
         "edad":[3,4]
@@ -13,25 +14,102 @@
         "descripcion": "Hagamos pastilina casera facilmente",
         "links":["https://www.youtube.com/watch?v=HRs7Dfxl2-c"],
         "complejidad": "media",
-        "tiempo": 30,
-        "edad":[9,10]
+        "tiempo": 15,
+        "edad":[7,8,9,10]
     },
     {
-        "nombre":"Dibujemos",
-        "descripcion": "Hagamos pastilina casera facilmente",
-        "links":["https://www.youtube.com/watch?v=HRs7Dfxl2-c"],
-        "complejidad": "media",
-        "tiempo": 30,
-        "edad":[3,4]
-    },
-    {
-        "nombre":"colores",
-        "descripcion": "Hagamos pastilina casera facilmente",
-        "links":["https://www.youtube.com/watch?v=HRs7Dfxl2-c"],
+        "nombre":"Partes del cuerpo",
+        "descripcion": "Identifiquemos las partes del cuerpo",
+        "links":["https://i.ibb.co/KxYsCGm/cuerpo.jpg"],
         "complejidad": "media",
         "tiempo": 15,
         "edad":[3,4]
+    },
+    {
+        "nombre":"Colores",
+        "descripcion": "Necesitamos una cajita y bolitas de colores, despues las vamos a separar por colores ",
+        "links":["https://i.ibb.co/YkznVhx/colores.jpg"],
+        "complejidad": "baja",
+        "tiempo": 30,
+        "edad":[3,4]
+    },
+
+    {
+        "nombre":"Animales Terrestres y Animales Marinos",
+        "descripcion": "Identifiquemos el habitar de los animales ",
+        "links":["https://i.ibb.co/fMRHLwZ/animales-1.jpg"],
+        "cancion":["https://www.youtube.com/watch?v=K6d1-F_6gU0"],
+        "complejidad": "baja",
+        "tiempo": 30,
+        "edad":[5,6]
+    },
+    
+    {
+        "nombre":"Mascaras",
+        "descripcion": "Hagamos mascaras facilmente",
+        "links":["https://www.youtube.com/watch?v=AkCSQRudzE4"],
+        "complejidad": "media",
+        "tiempo": 30,
+        "edad":[5,6]
+    },
+    {
+        "nombre":"Gusanitos",
+        "descripcion": "Hagamos una carrera",
+        "links":["https://www.youtube.com/watch?v=masXI2h3qt0"],
+        "complejidad": "media",
+        "tiempo": 15,
+        "edad":[5,6]
+    },
+    {
+        "nombre":"Ponpones",
+        "descripcion": "Hagamos manualidades",
+        "links":["https://www.youtube.com/watch?v=8CHlMc6HKgU"],
+        "complejidad": "media",
+        "tiempo": 60,
+        "edad":[7,8]
+    },
+    {
+        "nombre":"Ratoncitos",
+        "descripcion": "Hagamos manualidades",
+        "links":["https://www.youtube.com/watch?v=ajPnqLqvqqM"],
+        "complejidad": "media",
+        "tiempo": 60,
+        "edad":[7,8,9,10]
+    },
+    {
+        "nombre":"Pintemos",
+        "descripcion": "Pintemos sigue los colores",
+        "links":["https://i.ibb.co/0BcPkz8/pinturas.jpg"],
+        "complejidad": "baja",
+        "tiempo": 30,
+        "edad":[7,8,9,10]
+    },
+
+    {
+        "nombre":"Completemos las vocales",
+        "descripcion": "Adivina la palabra completando las vocales ",
+        "links":["https://i.ibb.co/zZxshhx/vocales-completar.jpg"],
+        "complejidad": "baja",
+        "tiempo": 15,
+        "edad":[3,4]
+    },
+    {
+        "nombre":"Titeres",
+        "descripcion": "Reciclemos los calcetines y hagamos un amigo ",
+        "links":["https://www.youtube.com/watch?v=cN8tHkIQ_D8"],
+        "complejidad": "media",
+        "tiempo": 15,
+        "edad":[5,6]
     }
+
+
+
+
+
+
+
+
+    
     
     ]
 }

@@ -1,18 +1,211 @@
 {
-    "lunchs":[
-    {
-        "nombre":"Ciencia Loca",
-        "ingredientes": "actividades de ciencia para niños",
-        "links":["http://oyasdl", "http://"],
-        "complejidad": "alta",
-        "duracion": "40",
-        "preparacion":[6,7]
-    },
-    {
-        "nombre":"pintura de animales",
-        "descripcion": "actividades de ciencia para niños",
-        "complejidad": "alta",
-        "duracion": "10"
-    }
+    "lunchs": [
+        {
+            "nombre": "Papa rellena ",
+            "ingredientes": "1 kilo de papa, cocidas y peladas,190 gramos de Queso Philadephia, 1/4 tazas de crema 2 cucharadas de fécula de maiz, 5 cucharadas de perejil finamente, picado 2 cucharadas de consomé en polvo,1 taza de pan molido ,2 tazas de harina, 2 huevos 4 tazas de aceite, para freír",
+            "preparacion": [
+                "APLASTAR las papas con la mitad del Queso Crema Philadelphia® de Kraft®, la crema, la fécula de maíz, el perejil y sazonar con el consomé.",
+                "FORMAR bolitas con las manos y rellenarlas con trocitos del Queso Crema Philadelphia®restante.",
+                "PASAR por harina, huevo y pan molido y freír.",
+                "SERVIR acompañando una carne."
+            ],
+            "complejidad": "media",
+            "duracion": 40,
+            "edad": [7,8]
+              
+        },
+        {
+            "nombre": "Sandwich de Huevo Caracol",
+            "ingredientes": [
+                "4 huevos,",
+                "1/2 cucharaditas de Sal ,",
+                "1/4 cucharaditas de pimienta,",
+                "1 cucharada de cebollín fresco, finamente picado,",
+                "4 cucharadas de Aceite,",
+                "8 rebanadas de pan de caja, sin orillas,",
+                "4 cucharadas de queso crema,",
+                "8 rebanadas de jamón de pavo,",
+                "8 rebanadas de Queso Mozzarella, ",
+                "2 salchichas, cortadas por la mitad a lo largo,",
+                "8 clavos de olor, para simular los ojos,",
+                "1/4 zanahorias, en tiritas, para simular las antenas,",
+                "1 taza de espinaca, cortada en tiritas, para decorar,"
+            ],
+            "preparacion": [
+                "En un bowl, bate los huevos y sazona con sal, pimienta y cebollín.",
+                "Calienta un sartén de teflón a fuego medio, agrega una cuchardita de aceite y un poco de huevo batido. Forma un omelette y cocina alrededor de 5 minutos o hasta que esté cocido por ambos lados. Repite para formar 4 omelettes.",
+                "Con ayuda de un rodillo, aplana las rebanadas de pan y unta en dos rebanadas una cucharada de queso crema, uniendo por las orillas. Repite con todos los panes.",
+                "Coloca un omelette en el pan con queso, agrega jamón y queso mozzarella Extra Special®. Corta los excesos y enrolla cuidadosamente.",
+                "Coloca los clavos en las salchichas para simular los ojos del caracol y las zanahorias para simular las antenas. Pega a los rollitos de huevo con un poco de queso crema. Sirve acompañado de espinaca picada para simular el pasto."
+            ],
+            "complejidad": "media",
+            "duracion": 40,
+            "edad": [7,8]
+        },
+
+        {
+            "nombre": "Sandwich de Huevo Caracol",
+            "ingredientes": [
+                " 8 rebanadas de jamón de pavo",
+                "8 rebanadas de queso manchego",
+                "1 taza de harina",
+                "2 huevos",
+                "2 tazas de pan molido",
+                "suficiente de aceite vegetal",
+                "al gusto de salsa catsup, para acompañar."
+            ],
+            "preparacion": ["Sobre una tabla de madera, coloca una rebanada de jamón, rellena con queso manchego, enrolla y congela por 30 minutos.",
+                "Enharina los rollitos, sumerge en el huevo y empaniza.",
+                "En una sartén, calienta el aceite a fuego medio y fríe los rollitos por 5 minutos, o bien, hasta que estén doraditos. Coloca sobre papel absorbente para retirar el exceso de aceite.",
+                "Sirve acompañado de ensalada rusa y cátsup."
+            ],
+            "complejidad": "baja",
+            "duracion": 15,
+            "edad": [5,6]
+               
+        },
+        {
+            "nombre": "Copita de pay de manzana",
+            "ingredientes": [
+                " 1 cucharada de mantequilla.",
+                "2 manzanas, cortadas en rebanadas medianamente gruesas.",
+                "1/4 tazas de azúcar mascabado.",
+                "1 cucharadita de canela.",
+                "1 clavo de olor.",
+                "4 Yoghurt Natural , 150 ml c/u.",
+                "8 galletas, integral dulce, en trocitos"
+            ],
+            "preparacion": ["En una sartén a fuego bajo, derrite la mantequilla y cocina las manzanas junto con el azúcar hasta que se integre todo. Agrega la canela, el clavo y el cardamomo y cocina durante 10 minutos hasta que la fruta se suavice. Reserva.",
+            "Sirve el yoghurt en copitas o frasquitos, posteriormente las galletas trituradas y termina con las manzanas. Disfruta."
+            ],
+            "complejidad": "baja",
+            "duracion": 15,
+            "edad": [3,4]
+               
+        },
+        {
+            "nombre": "Paletas de jamon y queso",
+            "ingredientes": [
+                " 6 rebanadas de Pan Blanco Sin Orillas.",
+                "10 rebanadas de queso amarillo, tipo americano.",
+                "10 rebanadas de jamón de pavo.",
+                "20 palitos para paletas"
+            ],
+            "preparacion": ["Con ayuda de un rodillo, aplana ligeramente las rebanadas de Pan Blanco. Coloca una rebanada de queso amarillo y enrolla.",
+            "Corta los rollos con un grosor de 2 dedos y reserva.",
+            "Para los moñitos, corta el jamón en tiras de un dedo de grosor inserta en los palitos.",
+            "Inserta los rollitos de pan con queso, sirve las paletas y disfruta."
+            ],
+            "complejidad": "baja",
+            "duracion": 15,
+            "edad": [3,4]
+               
+        },
+        {
+            "nombre": "Caracoles",
+            "ingredientes": [
+                "1 paquete de queso americano, en rebanadas.",
+                "1 paquete de salchicha.",
+                "16 clavos de olor, entero.",
+                "germen de alfalfa.",
+                "jitomates cherry.",
+                "palillos"
+            ],
+            "preparacion": ["Cortar las salchichas a lo largo en 4 rebanadas delgadas.",
+            "Cortar en tiras las rebanadas de Queso Americano.",
+            "Colocar las tiras de queso encima de las mitades de salchicha dejando un espacio de 2 cm al inicio de cada salchicha.",
+            "Enrollar las salchichas a manera de concha, sujetar con palillos. Clavar en el espacio de 2 cm, 2 piezas de clavo simulando un par de ojos.",
+            "Servir 2 caracoles como porción junto con germen de trigo y los jitomates cherry."
+            ],
+            "complejidad": "baja",
+            "duracion": 15,
+            "edad": [3,4]
+               
+        },
+
+        {
+            "nombre": "Gelatina hecha con refresco",
+            "ingredientes": [
+                "1 gelatina de fresa.",
+                "1 litro de refresco de fresa.",
+                "1 lata de media crema.",
+                "1/4 kilos de fresa, pequeñas.",
+                "cremas chantilly"
+            ],
+            "preparacion": ["Se pone a hervir el refresco y se le agrega la gelatina, se mueve hasta que está disuelva y se agrega la media crema.",
+            "Se vacia en molde y se refrigera hasta cuajar. Ya fría se desmolda y se puede acompañar con crema batida y nueces para decorar."
+            ],
+            "complejidad": "baja",
+            "duracion": 30,
+            "edad": [5,6]
+               
+        },
+        {
+            "nombre": "Rollitos de Jamon con pure de Papa",
+            "ingredientes": [
+                "15 rebanadas de jamón de pavo",
+                "4 papas, cocidas.",
+                "1 barra de mantequilla, (90 gramos).",
+                "sal, al gusto"
+            ],
+            "preparacion": ["Ya que están las papas cocidas se les quita la cáscara y se empiezan a batir de ahí se le pone la sal y la mantequilla a temperatura ambiente y se siguen batiendo hasta que se incorpore muy bien la mantequilla y la sal.",
+            "Ya preparado el puré se agarra una rebanada de jamón y de ahí se le pone un poco de puré de papa se enrolla como si fuera un taco y de ahí se sigue con los demás hasta teminar."
+            ],
+            "complejidad": "baja",
+            "duracion": 30,
+            "edad": [7,8]
+               
+        },
+        {
+            "nombre": "Galletas con chispas de chocolate",
+            "ingredientes": [
+                "2 1/4 tazas de harina.",
+                "1 taza de mantequilla.",
+                "3/4 tazas de azúcar.",
+                "3/4 tazas de azúcar morena.",
+                "1 cucharadita de polvo para hornear.",
+                "1 cucharadita de sal.",
+                "1 cucharadita de esencia de vainilla.",
+                "2 huevos.",
+                "2 tazas de chispa de chocolate"
+            ],
+            "preparacion": ["Pre caliente el horno a 180°C. Batir la mantequilla a temperatura ambiente con el azúcar y el azúcar morena hasta obtener una mezcla esponjosa.",
+            "Agregar la vainilla y los huevos y batir bien.",
+            "Mezclar en otro recipiente la harina, la sal y el polvo para hornear. Agregar de poco en poco a la mezcla de mantequilla y continuar batiendo hasta incorporar todo.",
+            "Agregar las chispas de chocolate y mezclar con una cuchara.",
+            "Prepare dos charolas para hornear con mantequilla y harina y coloque con una cuchara bultitos de masa.",
+            "Hornee por 20 minutos o hasta que las galletas estén ligeramente doradas. Retirar del horno."
+            ],
+            "complejidad": "media",
+            "duracion": 60,
+            "edad": [9,10]
+               
+        },
+
+        {
+            "nombre": "Rollitos de ensalada de atún",
+            "ingredientes": [
+                "2 tazas de atún.",
+                "1 taza de zanahoria, cocida y cortada en cubitos.",
+                "1/2 tazas de apio, cortado en cubitos.",
+                "1/2 tazas de cebolla morada, finamente picada.",
+                "1 taza de jitomate, cortado en cubitos.",
+                "suficiente de Mayonesa , 320 gramos.",
+                "2 cucharadas de perejil, finamente picado.",
+                "12 rebanadas de pan de caja, sin orillas.",
+                "10 rebanadas de queso manchego"
+            ],
+            "preparacion": ["En un bowl mezcla el atún con la zanahoria, el apio, los chícharos, el jitomate, agrega Mayonesa, el perejil finamente picado, sazona con sal y pimienta. Reserva.",
+            "Sobre una mesa coloca las rebanadas de pan, con ayuda de un rodillo presiona uniendo las esquinas de cada uno de los panes.",
+            "Coloca Mayonesa sobre toda la superficie del pan, agrega las rebanadas de queso y la ensalada de atún. Con ayuda de tus manos enrolla, cubre con plástico antiadherente y refrigera por 1 hora.",
+            "Corta rollitos y disfruta."
+            ],
+            "complejidad": "media",
+            "duracion": 30,
+            "edad": [9,10]
+               
+        }
+
+
     ]
 }
